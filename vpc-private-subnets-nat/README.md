@@ -117,16 +117,23 @@ This simulates a real-world multi-tier web application architecture used in prod
 
 ## 📸 Screenshots
 
-> Add your screenshots in `/screenshots/` folder
+### AWS Resource Map
+![Resource Map](screenshots/02-aws-resource-map.png)
 
-- VPC Setup
-- Subnets (Public & Private)
-- Bastion Host Instance
-- NAT Gateway Configuration
-- Target Group (Healthy Targets)
-- Application Load Balancer
-- Python Application Output
-- Route Tables
+### EC2 Instances
+![EC2](screenshots/03-ec2-instances.png)
+
+### Load Balancer
+![ALB](screenshots/04-load-balancer.png)
+
+### Target Group Health
+![Target Group](screenshots/05-target-group-healthy.png)
+
+### Python Server Output
+![Python Server](screenshots/09-python-http-server.png)
+
+### Final Webpage
+![Final Output](screenshots/11-final-webpage.png)
 
 ---
 

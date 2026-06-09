@@ -117,6 +117,7 @@ This simulates a real-world multi-tier web application architecture used in prod
 
 ## 📸 Screenshots
 
+
 ### AWS Resource Map
 ![Resource Map](screenshots/02-aws-resource-map.png)
 
@@ -127,6 +128,8 @@ This simulates a real-world multi-tier web application architecture used in prod
 ![Load Balancer](screenshots/04-load-balancer.png)
 
 ### Target Group (Healthy Status)
+![Target Group](screenshots/05-target-group-healthy.png)
+
 ![Target Group](screenshots/05-target-group-healthy.png)
 
 ### SSH / PEM Setup

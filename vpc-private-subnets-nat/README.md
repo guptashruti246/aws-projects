@@ -117,29 +117,14 @@ This simulates a real-world multi-tier web application architecture used in prod
 
 ## 📸 Screenshots
 
-### AWS Resource Map
-![Resource Map](02-aws-resource-map.png)
-
-### EC2 Instances
-![EC2 Instances](03-ec2-instances.png)
-
-### Load Balancer
-![Load Balancer](04-load-balancer.png)
-
-### Target Group (Healthy Status)
-![Target Group](05-target-group-healthy.png)
-
-### SSH / PEM Setup
-![PEM Copy](06-scp-pem-copy.png)
-
-### Permission Error Fix
-![PEM Error](07-pem-permission-error.png)
-
-### Python HTTP Server
-![Python Server](09-python-http-server.png)
-
-### Final Webpage Output
-![Final Output](11-final-webpage.png)
+![Resource Map](screenshots/02-aws-resource-map.png)
+![EC2 Instances](screenshots/03-ec2-instances.png)
+![Load Balancer](screenshots/04-load-balancer.png)
+![Target Group](screenshots/05-target-group-healthy.png)
+![PEM Copy](screenshots/06-scp-pem-copy.png)
+![PEM Error](screenshots/07-pem-permission-error.png)
+![Python Server](screenshots/09-python-http-server.png)
+![Final Output](screenshots/11-final-webpage.png)
 
 ---
 

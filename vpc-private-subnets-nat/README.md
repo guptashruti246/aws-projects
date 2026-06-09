@@ -24,7 +24,7 @@ This simulates a real-world multi-tier web application architecture used in prod
 - Public Subnets (2 AZs)
 - Private Subnets (2 AZs)
 - Internet Gateway (IGW)
-- NAT Gateway (for outbound internet access)
+- NAT Gateway
 - Bastion Host (Jump Server)
 - Application Load Balancer (ALB)
 - Target Group
@@ -40,7 +40,7 @@ This simulates a real-world multi-tier web application architecture used in prod
 
 1. Users access application via ALB DNS
 2. ALB forwards traffic to Target Group
-3. Target Group routes request to EC2 instances (Python server)
+3. Target Group routes request to EC2 instances running Python server
 
 ---
 
@@ -54,7 +54,7 @@ This simulates a real-world multi-tier web application architecture used in prod
 
 ### 🌐 Outbound Access Flow
 
-- Private EC2 instances access the internet via NAT Gateway
+- Private EC2 instances access internet via NAT Gateway
 - No direct inbound access is allowed to private subnet
 
 ---
@@ -65,14 +65,14 @@ This simulates a real-world multi-tier web application architecture used in prod
 - Bastion Host acts as secure entry point for SSH access
 - Security Groups restrict access to required ports only
 - ALB handles external traffic instead of exposing EC2 directly
-- NAT Gateway enables secure outbound-only internet access
+- NAT Gateway enables secure outbound internet access
 
 ---
 
 ## ⚙️ Implementation Steps
 
 ### 1. VPC Setup
-- Created a custom VPC with CIDR block
+- Created custom VPC with CIDR block
 
 ### 2. Subnet Design
 - Public Subnets → Bastion Host, NAT Gateway, ALB
@@ -117,39 +117,36 @@ This simulates a real-world multi-tier web application architecture used in prod
 
 ## 📸 Screenshots
 
-
 ### AWS Resource Map
-![Resource Map](screenshots/02-aws-resource-map.png)
+![Resource Map](02-aws-resource-map.png)
 
 ### EC2 Instances
-![EC2 Instances](screenshots/03-ec2-instances.png)
+![EC2 Instances](03-ec2-instances.png)
 
 ### Load Balancer
-![Load Balancer](screenshots/04-load-balancer.png)
+![Load Balancer](04-load-balancer.png)
 
 ### Target Group (Healthy Status)
-![Target Group](screenshots/05-target-group-healthy.png)
-
-![Target Group](screenshots/05-target-group-healthy.png)
+![Target Group](05-target-group-healthy.png)
 
 ### SSH / PEM Setup
-![PEM Copy](screenshots/06-scp-pem-copy.png)
+![PEM Copy](06-scp-pem-copy.png)
 
 ### Permission Error Fix
-![PEM Error](screenshots/07-pem-permission-error.png)
+![PEM Error](07-pem-permission-error.png)
 
 ### Python HTTP Server
-![Python Server](screenshots/09-python-http-server.png)
+![Python Server](09-python-http-server.png)
 
 ### Final Webpage Output
-![Final Output](screenshots/11-final-webpage.png)
+![Final Output](11-final-webpage.png)
 
 ---
 
 ## 🧠 Key Learnings
 
 - VPC design and subnet segmentation
-- Bastion Host (Jump Box) architecture pattern
+- Bastion Host architecture pattern
 - NAT Gateway for secure outbound internet access
 - Load Balancing using ALB + Target Groups
 - Deploying Python applications on EC2
@@ -162,12 +159,9 @@ This simulates a real-world multi-tier web application architecture used in prod
 
 Successfully built a secure, scalable AWS architecture that demonstrates:
 
-- Real-world networking design (public/private subnet isolation)
-- Secure access control using Bastion Host
-- Load-balanced Python application deployment using ALB
+- Public/private subnet isolation
+- Secure SSH access using Bastion Host
+- Load-balanced Python application using ALB
 - Proper traffic routing using Target Groups
 
 This project represents a production-style AWS architecture suitable for DevOps and Cloud Engineering roles.
-
----
-

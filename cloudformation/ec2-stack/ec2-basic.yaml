@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Basic EC2 Instance using CloudFormation
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-05cf1e9f73fbad2e2
+      InstanceType: t3.micro
+      SecurityGroups:
+        - default

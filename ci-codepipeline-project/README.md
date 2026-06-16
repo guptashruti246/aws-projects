@@ -18,10 +18,10 @@ GitHub Repository
 
 ## ⚙️ AWS Services Used
 
-- AWS CodePipeline  
-- AWS CodeBuild  
-- AWS CodeConnections (GitHub Integration)  
-- IAM Roles & Policies  
+- AWS CodePipeline – CI/CD orchestration  
+- AWS CodeBuild – Build automation  
+- AWS CodeConnections – GitHub integration  
+- IAM Roles & Policies – Secure access management  
 
 ---
 
@@ -32,9 +32,6 @@ GitHub Repository
 - Executes build process using AWS CodeBuild
 - Runs Python build validation
 - Displays build status in AWS Console
-
----
-
 
 ---
 
@@ -49,33 +46,37 @@ GitHub Push
 
 ## 📸 Screenshots
 
-### 1. Pipeline Overview
+### Pipeline Overview
 ![Pipeline Overview](screenshots/01-pipeline-overview.png)
 
-### 2. Source Stage (GitHub Integration)
+### Source Stage (GitHub Integration)
 ![Source Repo](screenshots/02-source-repo.png)
 
-### 3. CodeBuild Execution
+### CodeBuild Execution
 ![CodeBuild Project](screenshots/03-codebuild-project.png)
 
 ---
 
 ## 🧠 Key Learnings
 
-- AWS CI/CD fundamentals
-- CodePipeline workflow orchestration
-- CodeBuild automation for Python projects
-- GitHub integration using CodeConnections
-- IAM roles and AWS permissions
+- AWS CI/CD fundamentals  
+- CodePipeline workflow orchestration  
+- CodeBuild automation for Python projects  
+- GitHub integration using CodeConnections  
+- IAM roles and AWS permissions  
 
 ---
 
 ## 📈 Future Improvements
 
-- Add deployment stage (EC2 or S3 hosting)
-- Add automated testing stage
-- Convert into full CI/CD pipeline
-- Add Docker support for containerized builds
+- Add deployment stage (EC2 or S3 hosting)  
+- Add automated testing stage  
+- Convert into full CI/CD pipeline  
+- Add Docker container support  
 
 ---
 
+## 👩‍💻 Author
+
+Shruti  
+AWS & DevOps Enthusiast

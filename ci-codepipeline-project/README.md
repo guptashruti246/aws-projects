@@ -1,10 +1,10 @@
-# 🚀 AWS CI Pipeline – Python Build Project
+#  AWS CI Pipeline – Python Build Project
 
 This project demonstrates a simple Continuous Integration (CI) pipeline using AWS services. It integrates GitHub with AWS CodePipeline and CodeBuild to automatically build a Python application whenever code is pushed to the repository.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The CI pipeline automates the following workflow:
 
@@ -25,7 +25,7 @@ GitHub Repository
 
 ---
 
-## 🧪 What This Project Does
+##  What This Project Does
 
 - Automatically triggers pipeline on push to GitHub (main branch)
 - Pulls latest code from repository
@@ -35,7 +35,7 @@ GitHub Repository
 
 ---
 
-## 🚀 CI Pipeline Flow
+##  CI Pipeline Flow
 
 GitHub Push  
 → Source Stage (AWS CodeConnections)  
@@ -44,7 +44,7 @@ GitHub Push
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Pipeline Overview
 ![Pipeline Overview](screenshots/01-pipeline-overview.png)
@@ -57,7 +57,7 @@ GitHub Push
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 - AWS CI/CD fundamentals  
 - CodePipeline workflow orchestration  
@@ -76,7 +76,3 @@ GitHub Push
 
 ---
 
-## 👩‍💻 Author
-
-Shruti  
-AWS & DevOps Enthusiast

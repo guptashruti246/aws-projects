@@ -50,8 +50,7 @@ An Amazon EC2 instance was launched to monitor its CPU utilization.
 
 Screenshot:
 
-![EC2 Instance](screenshots/01-ec2-instance.png)
-
+![EC2 Instance](01-ec2-instance.png)
 ---
 
 ### Step 2: Create SNS Topic
@@ -60,7 +59,7 @@ An Amazon SNS topic was created to receive notifications from CloudWatch alarms.
 
 Screenshot:
 
-![SNS Topic](screenshots/02-sns-topic-created.png)
+![SNS Topic](02-sns-topic-created.png)
 
 ---
 
@@ -70,7 +69,7 @@ An email subscription was added to the SNS topic and confirmed successfully.
 
 Screenshot:
 
-![Subscription Confirmed](screenshots/03-email-subscription-confirmed.png)
+![Subscription Confirmed](03-email-subscription-confirmed.png)
 
 ---
 
@@ -84,7 +83,7 @@ CloudWatch → Metrics → EC2 → Per-Instance Metrics → CPUUtilization
 
 Screenshot:
 
-![CPU Metric](screenshots/04-cloudwatch-metric-selected.png)
+![CPU Metric](04-cloudwatch-metric-selected.png)
 
 ---
 
@@ -102,7 +101,7 @@ Example Configuration:
 
 Screenshot:
 
-![Alarm Configuration](screenshots/05-cloudwatch-alarm-configuration.png)
+![Alarm Configuration](05-cloudwatch-alarm-configuration.png)
 
 ---
 
@@ -112,7 +111,7 @@ Created the alarm and verified that it was successfully deployed.
 
 Screenshot:
 
-![Alarm Created](screenshots/06-alarm-created.png)
+![Alarm Created](06-alarm-created.png)
 
 ---
 
@@ -122,7 +121,7 @@ Verified that the CloudWatch alarm changed its state from **OK** to **ALARM**, c
 
 Screenshot:
 
-![Alarm Triggered](screenshots/07-alarm-state-triggered.png)
+![Alarm Triggered](07-alarm-state-triggered.png)
 
 ---
 
@@ -132,8 +131,7 @@ Received an email notification through Amazon SNS after the alarm entered the AL
 
 Screenshot:
 
-![Email Notification](screenshots/08-email-notification-received.png)
-
+![Email Notification](08-email-notification-received.png)
 ---
 
 ## Key Learnings
@@ -148,18 +146,7 @@ Screenshot:
 
 ---
 
-## Future Enhancements
 
-- CloudWatch Dashboards
-- Slack Notifications
-- Lambda-based Auto Remediation
-- Integration with AWS Systems Manager
-- Monitoring additional EC2 metrics such as Memory and Disk Utilization
 
----
 
-## Author
 
-Shruti Gupta
-
-AWS Administrator | Aspiring DevOps Engineer
